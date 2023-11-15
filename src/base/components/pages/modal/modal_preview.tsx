@@ -1,3 +1,4 @@
+import { colorBg, colorGoLight } from "@/base/colors";
 import {
   assetIT1,
   assetIT2,
@@ -25,6 +26,10 @@ import {
   assetEVP4,
   assetEVP5,
   assetEVP6,
+  assetMO1,
+  assetMO2,
+  assetMO3,
+  assetMO4,
 } from "@/generated/assets";
 
 import Image from "next/image";
@@ -48,6 +53,7 @@ export default function ModalPreview({ setOpen, index, name }: Props) {
   const BL = [assetBL1, assetBL2, assetBL3, assetBL4];
   const EF = [assetEF1, assetEF2, assetEF3, assetEF4];
   const IT = [assetIT1, assetIT2, assetIT3, assetIT4];
+  const MO = [assetMO1, assetMO2, assetMO3, assetMO4];
   const EVP = [
     assetEVP1,
     assetEVP2,
@@ -83,6 +89,10 @@ export default function ModalPreview({ setOpen, index, name }: Props) {
       case 5:
         setImages(EF);
         break;
+      //! my order
+      case 6:
+        setImages(MO);
+        break;
     }
   }, []);
 
@@ -110,11 +120,11 @@ export default function ModalPreview({ setOpen, index, name }: Props) {
             borderTopLeftRadius: 5,
             borderTopRightRadius: 5,
             display: "flex",
-            background: "white",
+            background: colorBg,
             justifyContent: "space-between",
           }}
         >
-          <div>{name}</div>
+          <div style={{ color: colorGoLight }}>{name}</div>
           <button className="text-button" onClick={close}>
             Close
           </button>

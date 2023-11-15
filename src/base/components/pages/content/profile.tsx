@@ -1,13 +1,14 @@
 import React from "react";
-import TitleIcon from "../../ui/title_icon";
 import { MyInfo } from "@/base/constanst";
+import { colorText } from "@/base/colors";
 
 export default function Profile() {
   return (
     <div>
-      <TitleIcon title={"Profile"} state={"profile"} />
       <div style={{ paddingLeft: 30 }}>
-        <span>{MyInfo.details_profile}</span>
+        <span style={{ fontSize: 18, color: colorText }}>
+          {MyInfo.details_profile}
+        </span>
       </div>
     </div>
   );

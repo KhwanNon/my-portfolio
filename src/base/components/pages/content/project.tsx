@@ -20,8 +20,10 @@ export default function Project() {
       <div key={`#${index}`}>
         {index !== 0 && <Box h={10} />}
         <div>
-          <div style={{ flex: 1, fontWeight: "bold" }}>{item.name}</div>
-          <div style={{ display: "flex" }}>
+          <div style={{ flex: 1, fontWeight: "bold", color: "#EFEAD8" }}>
+            {item.name}
+          </div>
+          <div style={{ display: "flex", color: "#D0C9C0" }}>
             <div>
               {item.details} <Box w={5} />
               <button

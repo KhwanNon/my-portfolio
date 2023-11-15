@@ -1,3 +1,5 @@
+import { colorText } from "@/base/colors";
+import { MyInfo } from "@/base/constanst";
 import React from "react";
 
 export default function HeaderTitle() {
@@ -7,9 +9,10 @@ export default function HeaderTitle() {
         style={{
           fontSize: 30,
           fontWeight: "bold",
+          color: colorText,
         }}
       >
-        Khwanchai Nontawichit
+        {MyInfo.contact.name}
       </span>
     </div>
   );

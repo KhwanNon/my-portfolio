@@ -3,7 +3,7 @@ import Box from "../../ui/box";
 import Image from "next/image";
 import TitleIcon from "../../ui/title_icon";
 
-import { colorMain } from "@/base/colors";
+import { colorGoLight } from "@/base/colors";
 import { MyInfo } from "@/base/constanst";
 import SubTitleIcon from "../../ui/sub_title_icon";
 import { useWindowSize } from "@/hooks/use_window_size";
@@ -14,8 +14,8 @@ import {
   assetTS,
   assetJS,
   assetNuxt,
+  assetGo,
 } from "@/generated/assets";
-
 
 export default function Skills() {
   const size = useWindowSize();
@@ -38,7 +38,7 @@ export default function Skills() {
         }}
       >
         <div style={{ flex: 1 }}>
-          <span>{title}</span>
+          <span style={{ color: "#D0C9C0" }}>{title}</span>
         </div>
 
         <Box w={10} />
@@ -59,7 +59,7 @@ export default function Skills() {
   };
 
   const renderText = (value: string) => (
-    <span style={{ fontWeight: "bold", color: colorMain }}>{value}</span>
+    <span style={{ fontWeight: "bold", color: colorGoLight }}>{value}</span>
   );
 
   const renderProgressBar = (percent: number) => (
@@ -72,7 +72,7 @@ export default function Skills() {
       }}
     >
       <div
-        style={{ width: `${percent}%`, background: colorMain, height: 12 }}
+        style={{ width: `${percent}%`, background: colorGoLight, height: 12 }}
       />
       <div
         style={{
@@ -114,6 +114,8 @@ export default function Skills() {
           <Image src={assetJS} alt="js" width="40" height="40" />
           <Box w={10} />
           <Image src={assetNuxt} alt="nuxt" width="40" height="40" />
+          <Box w={10} />
+          <Image src={assetGo} alt="nuxt" width="40" height="40" />
         </div>
 
         <Box h={20} />

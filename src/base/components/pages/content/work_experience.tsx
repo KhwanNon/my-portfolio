@@ -22,13 +22,13 @@ export default function WorkExperience() {
         }}
       />
       <Box w={10} />
-      <div style={{ flex: 1 }}>{text}</div>
+      <div style={{ flex: 1, color: "#D0C9C0" }}>{text}</div>
     </div>
   );
 
   const renderWorkExperience = () =>
     MyInfo.work_experience.map((item, index) => (
-      <div key={`#${index}`}>
+      <div key={`#${index}`} style={{ marginBottom: index == 0 ? 20 : 0 }}>
         <SubTitleIcon text={item.date} state={"date"} />
         <SubTitleIcon text={item.location} state={"location"} />
         <div style={{ paddingLeft: 20 }}>

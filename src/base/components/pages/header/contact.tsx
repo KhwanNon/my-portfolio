@@ -1,5 +1,8 @@
 import React from "react";
 import SubTitleIcon from "../../ui/sub_title_icon";
+import { colorText } from "@/base/colors";
+import { MyInfo } from "@/base/constanst";
+import Box from "../../ui/box";
 
 export default function HeaderContact() {
   return (
@@ -10,8 +13,9 @@ export default function HeaderContact() {
         flexDirection: "column",
       }}
     >
-      <SubTitleIcon text={"083-862-3540"} state={"phone"} />
-      <SubTitleIcon text={"Khwan.nontawichit@gmail.com"} state={"mail"} />
+      <SubTitleIcon text={MyInfo.contact.phone} state={"phone"} />
+      <Box h={5} />
+      <SubTitleIcon text={MyInfo.contact.email} state={"mail"} />
     </div>
   );
 }

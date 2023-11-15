@@ -1,3 +1,6 @@
-export const colorBg = '#FFFFFF';
-export const colorMain = '#2D4059';
-export const colorText = '#444F5A';
+export const colorBg = '#202224';
+export const colorText = '#FFFFFF'
+export const colorGrey = '#EEEEEE'
+export const colorGoDark = '#306f90';
+export const colorGoDark2 = '#2c5b74';
+export const colorGoLight = '#839AA8';

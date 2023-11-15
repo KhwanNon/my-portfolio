@@ -3,6 +3,7 @@ export const assetTS = require("../assets/images/typescript-2.svg");
 export const assetReact = require("../assets/images/react.svg");
 export const assetNuxt = require("../assets/images/nuxt-icon-white.png");
 export const assetJS = require("../assets/images/js.png");
+export const assetGo = require("../assets/images/go.png");
 
 export const assetBL1 = require("../assets/images/the-blacklist/bl1.jpg");
 export const assetBL2 = require("../assets/images/the-blacklist/bl2.jpg");
@@ -35,3 +36,11 @@ export const assetEF1 = require("../assets/images/enfa/EF1.png");
 export const assetEF2 = require("../assets/images/enfa/EF2.png");
 export const assetEF3 = require("../assets/images/enfa/EF3.png");
 export const assetEF4 = require("../assets/images/enfa/EF4.png");
+
+export const assetMO1 = require("../assets/images/mo/MO1.jpg");
+export const assetMO2 = require("../assets/images/mo/MO2.jpg");
+export const assetMO3 = require("../assets/images/mo/MO3.jpg");
+export const assetMO4 = require("../assets/images/mo/MO4.jpg");
+
+export const assetGolang = require("../assets/images/golang.png");
+export const assetMac = require("../assets/images/mac.png");

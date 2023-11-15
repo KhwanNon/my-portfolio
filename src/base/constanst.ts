@@ -1,9 +1,27 @@
 export const MyInfo = {
+  contact:{
+    name:"Khwanchai Nontawichit",
+    phone:"083-862-3540",
+    email: "Khwan.nontawichit@gmail.com",
+    git: "https://github.com/KhwanNon?tab=repositories",
+  },
   details_profile:
-    "I am a 23-year-old mobile developer with 1 year and 7 months of work experience. I am interested in working from home and consider myself to be a responsible individual who can manage my time well. Additionally, I possess the ability to work effectively in a team and value the opinions of my colleagues.",
+    "I am a 24-year-old mobile developer with two years of experience. I am keenly interested in pursuing a role as a full-stack or backend developer, focusing on the Go programming language (Golang). I am particularly drawn to remote work opportunities and consider myself a responsible individual with strong time management skills. Moreover, I have demonstrated the ability to collaborate effectively within a team, valuing the perspectives and input of my colleagues.",
   work_experience: [
     {
-      date: "09/2021 - 04/2023",
+      date: "04/2023 - 09/2023",
+      location: "Thailand, Chon Buri",
+      title1: "Mobile Developer",
+      title2: "MYORDER MARKETING CO., LTD.",
+      details: [
+        "Developed applications for database processing and tested created software.",
+        "Work on a team of developers to maintain and enhance applications.",
+        "Co work senior developers with coding, testing, and debugging of a mobile application.",
+        "Participated in team meetings and contributed to project planning and design discussions.",
+      ],
+    },
+    {
+      date: "09/2021 - 03/2023",
       location: "Thailand, Bangkok",
       title1: "Mobile Developer",
       title2: "MINERTA TECHNOLOGY CO., LTD.",
@@ -42,11 +60,11 @@ export const MyInfo = {
     software_skills: [
       {
         name: "Flutter",
-        level: "1 Year",
+        level: "1 Year 4 Month",
       },
       {
         name: "React Native (Type Script)",
-        level: "3 Month",
+        level: "5 Month",
       },
       {
         name: "Next JS",
@@ -56,15 +74,19 @@ export const MyInfo = {
         name: "Nuxt JS",
         level: "2 Month",
       },
+      {
+        name: "Golang",
+        level: "2 Week",
+      },
     ],
     soft_skills: [
       {
         name: "Teamwork",
-        percent: 100,
+        percent: 80,
       },
       {
         name: "Analytical Skills",
-        percent: 90,
+        percent: 80,
       },
       {
         name: "Problem-solving",
@@ -72,15 +94,15 @@ export const MyInfo = {
       },
       {
         name: "Time Management",
-        percent: 100,
+        percent: 80,
       },
       {
         name: "Multitasking",
-        percent: 90,
+        percent: 80,
       },
       {
         name: "Communication",
-        percent: 60,
+        percent: 70,
       },
     ],
   },
@@ -99,5 +121,10 @@ export const MyInfo = {
     },
     { name: "G2G", details: "Use React Native TS for development.", link: "" },
     { name: "Enfagrow", details: "Use Flutter for development.", link: "" },
+    { 
+      name: "My order", 
+      details: "Use React Native TS for development.",
+      link: "https://play.google.com/store/apps/details?id=ai.myorder&hl=th&gl=US&pli=1",
+    },
   ],
 };

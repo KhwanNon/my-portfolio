@@ -1,10 +1,9 @@
 * {
-  color: #444F5A;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-family: serif;
+  font-family:'Courier New', Courier, monospace;
 }
 
 html,
@@ -25,7 +24,7 @@ a {
 .text-button-underline {
   background-color: transparent;
   border: none;
-  color: skyblue;
+  color: #B4E4FF;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -34,7 +33,7 @@ a {
   background-color: transparent;
   border: none;
   font-weight: bold;
-  color: #2D4059;
+  color: #FFF;
   cursor: pointer;
 }
 

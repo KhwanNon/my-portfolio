@@ -4,6 +4,8 @@ import TitleIcon from "../../ui/title_icon";
 import TextBold from "../../ui/text_bold";
 import { MyInfo } from "@/base/constanst";
 import SubTitleIcon from "../../ui/sub_title_icon";
+import { assetGolang } from "@/generated/assets";
+import Image from "next/image";
 
 export default function Education() {
   const renderEducation = () =>
@@ -24,6 +26,13 @@ export default function Education() {
     <div>
       <TitleIcon title={"Education"} state={"education"} />
       <div style={{ paddingLeft: 10 }}>{renderEducation()}</div>
+      <Image
+        src={assetGolang}
+        style={{ marginLeft: 20, marginTop: 30 }}
+        alt="js"
+        width="150"
+        height="200"
+      />
     </div>
   );
 }
