@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  background: white
+  background: #101010
 }
 
 a {
@@ -62,3 +62,40 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
+
+.lightBulb {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #FBFFDC;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #FBFFDC;
+  animation: flicker 1s infinite alternate;
+}
+
+.line {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;  
+  height: 100px; 
+  background-color: #000;  
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 50px #FBFFDC;
+  }
+  100% {
+    box-shadow: 0 0 30px #FBFFDC;
+  }
+}
+
+
+
+

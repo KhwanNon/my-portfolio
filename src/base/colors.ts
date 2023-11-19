@@ -1,4 +1,4 @@
-export const colorBg = '#202224';
+export const colorBg = '#202020';
 export const colorText = '#FFFFFF'
 export const colorGrey = '#EEEEEE'
 export const colorGoDark = '#306f90';

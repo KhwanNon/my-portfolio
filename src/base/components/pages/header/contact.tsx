@@ -3,6 +3,7 @@ import SubTitleIcon from "../../ui/sub_title_icon";
 import { colorText } from "@/base/colors";
 import { MyInfo } from "@/base/constanst";
 import Box from "../../ui/box";
+import { FaEnvelope, FaPhone, FaGithub } from "react-icons/fa";
 
 export default function HeaderContact() {
   return (
