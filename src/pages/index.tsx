@@ -15,6 +15,7 @@ export default function Main() {
 
   const [tabsIndex, setTabsIndex] = useState<number>(0);
   const listTabs: string[] = ["Home", "Resume", "Project", "Contact"];
+
   const tabComponents: JSX.Element[] = [
     <HomePage />,
     <ResumePage />,
@@ -30,7 +31,7 @@ export default function Main() {
   ];
 
   function onPressTabbar(index: number) {
-    if (index == tabsIndex) return;    
+    if (index == tabsIndex) return;
     setTabsIndex(index);
   }
 
@@ -43,17 +44,16 @@ export default function Main() {
             className={index == tabsIndex ? styles.tabActive : styles.tab}
             onClick={() => onPressTabbar(index)}
           >
-            {!showIcon ? item : tabIcons[index]}
+            {!showIcon && item}
+            {showIcon && tabIcons[index]}
           </div>
         ))}
       </div>
       <div className={styles.screen}>
         <div className={styles.display}>
-          <div className={styles.lightBar}>
-            <div className={styles.lightGreen} />
-          </div>
           {/* screen */}
           <div>{tabComponents[tabsIndex]}</div>
+          <div className={styles.loadingScreen}>Loading...</div>
         </div>
       </div>
       {isMac && <div className={styles.base}></div>}

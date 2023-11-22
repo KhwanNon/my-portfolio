@@ -8,20 +8,20 @@ import {
   FaPhone,
   FaGithub,
 } from "react-icons/fa";
+import Box from "./box";
 
 type Props = {
   text: string;
-  spaceLeft?: boolean;
   state: "date" | "location" | "alert" | "mail" | "phone" | "git";
 };
 
-export default function SubTitleIcon({ text, state, spaceLeft }: Props) {
+export default function SubTitleIcon({ text, state }: Props) {
   const renderIcon = () => {
     let icon: any = {
-      date: <FaCalendar size={12} color="#B7B7B7" />,
-      location: <FaMapMarker size={12} color="#FE0000" />,
-      alert: <FaExclamationCircle size={12} color="#EDE4E0" />,
-      phone: <FaPhone size={12} color="#38E54D" />,
+      date: <FaCalendar size={12} color="grey" />,
+      location: <FaMapMarker size={12} color="#00ADB5" />,
+      alert: <FaExclamationCircle size={12} color="#3F72AF" />,
+      phone: <FaPhone size={12} color="#A2FF86" />,
       mail: <FaEnvelope size={12} color="#EF5B0C" />,
     };
 
@@ -30,16 +30,9 @@ export default function SubTitleIcon({ text, state, spaceLeft }: Props) {
 
   return (
     <div style={{ display: "flex", flexDirection: "row" }}>
-      <div style={{ marginLeft: 20 }}>{renderIcon()}</div>
-      <span
-        style={{
-          marginLeft: 5,
-          fontWeight: "bold",
-          color: "#EEEEEE",
-        }}
-      >
-        {text}
-      </span>
+      <div>{renderIcon()}</div>
+      <Box w={5} />
+      <span className="textSubTitle">{text}</span>
     </div>
   );
 }
