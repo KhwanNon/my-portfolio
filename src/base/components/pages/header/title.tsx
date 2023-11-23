@@ -9,7 +9,7 @@ export default function HeaderTitle() {
         style={{
           fontSize: 30,
           fontWeight: "bold",
-          color: colorText,
+          color: '#000',
         }}
       >
         {MyInfo.contact.name}

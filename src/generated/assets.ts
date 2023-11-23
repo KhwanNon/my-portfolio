@@ -44,5 +44,4 @@ export const assetMO4 = require("../assets/images/mo/MO4.jpg");
 
 export const assetGolang = require("../assets/images/golang.png");
 export const assetMac = require("../assets/images/mac.png");
-export const assetMacBase = require("../assets/images/mac-base.png");
 export const assetExten = require("../assets/images/extension.png");
