@@ -1,0 +1,66 @@
+.container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: radial-gradient(circle at 1px 1px, transparent 1px, #151515 1px),
+    radial-gradient(
+      circle at 0px 40px,
+      transparent 10px,
+      rgba(255, 255, 0, 0.601) 5px,
+      rgba(255, 255, 0, 0.601) 6px
+    );
+  background-size: 100px 100px;
+}
+
+.boxCover {
+  display: flex;
+  flex-direction: column;
+  background-color: #dd1525;
+  height: 100vh;
+}
+
+.boxProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  padding: 30px;
+  box-shadow: 0px 0px 50px 70px #151515;
+}
+
+.boxSkills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.boxProject {
+  background-color: #dd1525;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.boxExperience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.boxSocial {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 50px 10px 100px 10px;
+}
+
+.boxContact {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8de22;
+  height: 100vh;
+}

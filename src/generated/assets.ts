@@ -45,3 +45,9 @@ export const assetMO4 = require("../assets/images/mo/MO4.jpg");
 export const assetGolang = require("../assets/images/golang.png");
 export const assetMac = require("../assets/images/mac.png");
 export const assetExten = require("../assets/images/extension.png");
+export const assetBannerContact = require("../assets/images/banner-contact.png");
+
+export const assetCP1 = require("../assets/images/cyberpunk/cp1.png");
+export const assetCP2 = require("../assets/images/cyberpunk/cp2.png");
+export const assetCP3 = require("../assets/images/cyberpunk/cp3.png");
+export const assetCP4 = require("../assets/images/cyberpunk/cp4.png");

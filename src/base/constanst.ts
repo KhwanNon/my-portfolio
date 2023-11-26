@@ -1,12 +1,12 @@
 export const MyInfo = {
-  contact:{
-    name:"Khwanchai Nontawichit",
-    phone:"083-862-3540",
+  contact: {
+    name: "Khwanchai Nontawichit",
+    phone: "083-862-3540",
     email: "Khwan.nontawichit@gmail.com",
     git: "https://github.com/KhwanNon?tab=repositories",
   },
   details_profile:
-    "I am a 24-year-old mobile developer with two years of experience. I am keenly interested in pursuing a role as a full-stack or backend developer, focusing on the Go programming language (Golang). I am particularly drawn to remote work opportunities and consider myself a responsible individual with strong time management skills. Moreover, I have demonstrated the ability to collaborate effectively within a team, valuing the perspectives and input of my colleagues.",
+    "I am a 24-year-old mobile and web developer with two years of experience. I am keenly interested in securing a role as a full-stack or web developer, and I am particularly drawn to remote work opportunities. I consider myself a responsible individual with strong time management skills. Moreover, I have demonstrated the ability to collaborate effectively within a team, valuing the perspectives and input of my colleagues.",
   work_experience: [
     {
       date: "04/2023 - 09/2023",
@@ -40,14 +40,21 @@ export const MyInfo = {
       location: "Thailand, Chonburi",
       title1: "Software Engineering",
       title2: "Burapha University",
-      details: "",
+      details: [
+        "Studied a comprehensive curriculum covering software development, algorithms, databases, and related topics.",
+        "Engaged in hands-on projects and assignments to apply theoretical knowledge to real-world scenarios.",
+        "Participated in extracurricular activities, workshops, and events to enhance skills and network with peers.",
+      ],
     },
     {
       date: "2011 - 2017",
       location: "Thailand, Chachoengsao",
       title1: "High School",
       title2: "Sanam Chai Khet School",
-      details: "",
+      details: [
+        "Completed a comprehensive high school curriculum, covering a range of subjects.",
+        "Participated in extracurricular activities and events, developing interpersonal and leadership skills.",
+      ],
     },
   ],
   skills: {
@@ -73,10 +80,6 @@ export const MyInfo = {
       {
         name: "Nuxt JS",
         level: "2 Month",
-      },
-      {
-        name: "Golang",
-        level: "2 Week",
       },
     ],
     soft_skills: [
@@ -121,8 +124,8 @@ export const MyInfo = {
     },
     { name: "G2G", details: "Use React Native TS for development.", link: "" },
     { name: "Enfagrow", details: "Use Flutter for development.", link: "" },
-    { 
-      name: "My order", 
+    {
+      name: "My order",
       details: "Use React Native TS for development.",
       link: "https://play.google.com/store/apps/details?id=ai.myorder&hl=th&gl=US&pli=1",
     },

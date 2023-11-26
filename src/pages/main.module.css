@@ -1,143 +1,209 @@
 .container {
-  flex-direction: column;
   margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: start;
-  height: 100vh;
-  background-color: #101010;
-}
-
-.screen {
-  z-index: 100;
-  width: 90%;
-  max-width: 900px;
-  height: 60vw;
-  min-height: 500px;
-  max-height: 600px;
-  border-radius: 15px;
-  background-color: #000;
-  padding: 0.5rem;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.display {
   width: 100%;
-  height: 100%;
+}
+
+.coverContainer {
   position: relative;
-  border-radius: 10px;
+  height: 668px;
+  background-color: #dd1525;
+}
+
+.cover {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* max-width: 1400px; */
+  object-fit: cover;
+}
+
+.coverContent {
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  background-color: black;
-  overflow: auto;
-  animation: fadeInWithShadow 1s forwards;
-  animation-delay: 3s;
+  align-items: center;
 }
 
-@keyframes fadeInWithShadow {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    background-color: #fff;
-    box-shadow: 0 0 20px #fff;
-  }
-}
-
-.base {
-  width: 98%;
-  max-width: 1100px;
-  height: 40px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  background-color: rgb(0, 0, 0);
-}
-
-.tabbar {
+.btnStyle {
   position: relative;
+  color: #f9f54b;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #f9f54b;
+  background: rgba(0, 0, 0, 0.763);
+  width: 230px;
+  font-size: 16px;
+  box-shadow: inset 0px 0px 0.5rem 0px #f9f54b, 0px 0px 0.5rem 0px #f9f54b;
+  animation: border-flicker 2s linear infinite;
+}
+
+.row {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  width: 100%;
-  max-width: 1100px;
-  height: 60px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 80px;
-  border-radius: 0px 0px 40px 40px;
-  background-color: rgb(0, 0, 0);
-  overflow: hidden;
 }
 
-.tab {
-  flex: 1;
-  margin: 0px 10px;
-  text-align: center;
-  color: #d2d2d2;
-  padding: 3px 5px;
-  cursor: pointer;
-  transition: color 0.3s, font-size 0.3s;
-}
-
-.tab:hover {
-  color: #a2ff86;
-  font-size: 16px;
-}
-
-.tabActive {
-  flex: 1;
-  margin: 0px 10px;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 8px;
-  color: #000;
-  padding: 3px 5px;
-  background-color: #a2ff86;
-  animation: flicker 2s infinite alternate;
-}
-
-@keyframes flicker {
-  0% {
-    box-shadow: 0 0 20px #a2ff86;
-  }
-  100% {
-    box-shadow: 0 0 10px #a2ff86;
-  }
-}
-
-.loadingScreen {
-  position: absolute;
-  color: #a2ff86;
-  background-color: #151515;
-  font-size: 30px;
+.textName {
+  font-size: 50px;
+  color: #FFF;
   font-weight: bold;
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
+}
+
+.text20 {
+  font-size: 20px;
+}
+
+.infoContainer {
+  position: relative;
+  height: 300px;
+  background-color: #000000;
+  box-shadow: 0px 0px 50px 70px #000000;
+}
+
+.info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 800px;
+}
+
+.textTitleYellow {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f9f54b;
+}
+
+.textBodyWhite {
+  font-size: 18px;
+  color: #fff;
+}
+
+.skillsContainer {
+  position: relative;
+  height: 700px;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+}
+
+.skillsTab {
+  color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+.listSkills {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.listSkillsActive {
+  font-size: 20px;
+  margin-top: 40px;
+  color: #f9f54b;
+  width: 160px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 2px solid #f9f54b;
+}
+
+.skillsInfo {
+  position: absolute;
+  right: 0%;
+  bottom: 30%;
+  transform: translateX(-50%);
+  height: 300px;
+  width: 500px;
+  background-color: #000000ee;
+  border: 1px solid #f9f54b;
+  box-shadow: inset 0px 0px 0.5rem 0px #f9f54b, 0px 0px 0.5rem 0px #f9f54b;
+}
+
+
+.cp2 {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  margin-top: -50px;
+  width: 700px;
+  height: 700px;
+  object-fit: cover;
+}
+
+.textTitleWhite {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.workExperience {
+  position: relative;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  animation: flickerText 1s infinite alternate, fadeOut 0.5s 3s forwards;
+  padding-top: 60px;
+  background-color: #dd1525;
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+.cp3{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1400px;
+  height: 700px;
+  bottom: 0px;
+  object-fit: cover;
+
 }
 
-@keyframes flickerText {
-  0% {
-    text-shadow: 0 0 20px #a2ff86;
-  }
-  100% {
-    text-shadow: 0 0 10px #a2ff86;
-  }
+.textExperience{
+  font-size: 50px;
+  color: #FFF;
+  font-weight: bold;
+  height: 60px;
+  text-align: center;
+  z-index: 100;
+  background-color: #dd1525;
+}
+
+.rowExperience {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.boxExperience{
+  flex-grow: 1;
+  flex-basis: 300px;
+  margin: 10px;
+  z-index: 100;
+  background-color: #000000ee;
+}
+
+.education {
+  height: 400px;
+  background-color: rgb(75, 75, 75);
+}
+
+.socialOnline {
+  height: 500px;
+  background-color: rgb(255, 204, 0);
+}
+
+.contact {
+  height: 400px;
+  background-color: yellow;
 }

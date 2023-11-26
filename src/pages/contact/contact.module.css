@@ -1,0 +1,221 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.banner {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 10px black;
+}
+
+.textHeader {
+  margin-top: 80px;
+  z-index: 100;
+  text-align: center;
+}
+
+.hd1 {
+  font-size: 10px;
+}
+
+.hd2 {
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.channelContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.channel {
+  flex-grow: 1;
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chTitle {
+  margin-top: 45px;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.chValue {
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.socialContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.social {
+  flex-grow: 1;
+  /* flex-basis: 50px; */
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleSocial {
+  border-radius: 50px;
+  padding: 10px;
+  background-color: white;
+  background-color: var(--color);
+  transition: background-color 0.7s ease;
+}
+
+.circleSocial:hover {
+  cursor: pointer;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: 0 0 10px var(--color);
+  }
+  100% {
+    box-shadow: 0 0 40px var(--color);
+  }
+}
+
+.btnGit {
+  position: relative;
+  color: #4fc0d0;
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #4fc0d0;
+  border-radius: 0.45rem;
+  background: none;
+  perspective: 2rem;
+  font-size: 2rem;
+  box-shadow: inset 0px 0px 0.5rem 0px #4fc0d0, 0px 0px 0.5rem 0px #4fc0d0;
+  animation: border-flicker 2s linear infinite;
+}
+
+.textGit {
+  float: left;
+  text-shadow: 0 0 0.125rem #ffffff4d, 0 0 0.45 #4fc0d0;
+  animation: text-flicker 3s linear infinite;
+}
+
+.btnGit:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #4fc0d0;
+  text-shadow: none;
+  animation: none;
+}
+
+.btnGit:hover .textGit {
+  animation: none;
+}
+
+.btnGit::before {
+  filter: blur(1.5rem);
+  opacity: 1;
+}
+
+.btnGit:hover::after {
+  opacity: 1;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0.3;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
