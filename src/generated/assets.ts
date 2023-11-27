@@ -10,22 +10,15 @@ export const assetBL2 = require("../assets/images/the-blacklist/bl2.jpg");
 export const assetBL3 = require("../assets/images/the-blacklist/bl3.jpg");
 export const assetBL4 = require("../assets/images/the-blacklist/bl4.jpg");
 
-export const assetVN1 = require("../assets/images/vn/vn1.jpg");
-export const assetVN2 = require("../assets/images/vn/vn2.jpg");
-export const assetVN3 = require("../assets/images/vn/vn3.jpg");
-export const assetVN4 = require("../assets/images/vn/vn4.jpg");
-
-export const assetIT1 = require("../assets/images/itech/it2.png");
-export const assetIT2 = require("../assets/images/itech/it3.png");
-export const assetIT3 = require("../assets/images/itech/it4.png");
-export const assetIT4 = require("../assets/images/itech/it6.png");
+export const assetVN1 = require("../assets/images/vn/vn1.png");
+export const assetVN2 = require("../assets/images/vn/vn2.png");
+export const assetVN3 = require("../assets/images/vn/vn3.png");
+export const assetVN4 = require("../assets/images/vn/vn4.png");
 
 export const assetEVP1 = require("../assets/images/evp/EVP1.jpg");
 export const assetEVP2 = require("../assets/images/evp/EVP2.jpg");
 export const assetEVP3 = require("../assets/images/evp/EVP3.jpg");
 export const assetEVP4 = require("../assets/images/evp/EVP4.jpg");
-export const assetEVP5 = require("../assets/images/evp/EVP5.jpg");
-export const assetEVP6 = require("../assets/images/evp/EVP6.jpg");
 
 export const assetG2G1 = require("../assets/images/g2g/G2G1.png");
 export const assetG2G2 = require("../assets/images/g2g/G2G2.png");
@@ -51,3 +44,4 @@ export const assetCP1 = require("../assets/images/cyberpunk/cp1.png");
 export const assetCP2 = require("../assets/images/cyberpunk/cp2.png");
 export const assetCP3 = require("../assets/images/cyberpunk/cp3.png");
 export const assetCP4 = require("../assets/images/cyberpunk/cp4.png");
+export const assetCP5 = require("../assets/images/cyberpunk/cp5.png");

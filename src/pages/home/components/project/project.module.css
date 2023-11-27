@@ -1,17 +1,77 @@
-.boxListProject{
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    background-color: black;
+.imgBg {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  object-fit: cover;
+  bottom: 0;
 }
 
-.boxTabs{
-display: flex;
-flex-direction: row;
-background-color: rgba(0, 0, 0, 0.802);
-box-shadow: inset 0px 0px 0.5rem 0px #f9f54b, 0px 0px 0.5rem 0px #f9f54b;
+.boxListProject {
+  width: 100%;
+  padding: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 2;
 }
 
-.tab{
+.boxListProject::-webkit-scrollbar {
+  height: 5px;
+}
+.boxListProject::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255);
+}
 
+.boxListProject::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.352);
+}
+
+.itemImage {
+  margin: 20px;
+  border-radius: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.802);
+  transition: transform 0.3s ease;
+}
+
+.itemImage:hover {
+  transform: scale(1.1);
+}
+
+.boxTabs {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 2;
+}
+
+.tab,
+.tabActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 180px;
+  margin: 15px;
+  text-align: center;
+  color: #f9f54b;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.802);
+  border: 1px solid #f9f54b;
+}
+
+.tabActive {
+  color: #000;
+  background-color: #f9f54b;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  color: #000;
+  background-color: #f9f54b;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
 }

@@ -1,3 +1,30 @@
+import {
+  assetVN4,
+  assetVN3,
+  assetVN2,
+  assetVN1,
+  assetBL1,
+  assetBL2,
+  assetBL3,
+  assetBL4,
+  assetEVP1,
+  assetEVP2,
+  assetEVP3,
+  assetEVP4,
+  assetG2G1,
+  assetG2G2,
+  assetG2G3,
+  assetG2G4,
+  assetEF1,
+  assetEF2,
+  assetEF3,
+  assetEF4,
+  assetMO1,
+  assetMO2,
+  assetMO3,
+  assetMO4,
+} from "@/generated/assets";
+
 export const MyInfo = {
   contact: {
     name: "Khwanchai Nontawichit",
@@ -110,24 +137,47 @@ export const MyInfo = {
     ],
   },
   project: [
-    { name: "iTech", details: "Use Flutter for development.", link: "" },
-    {
-      name: "VN English any where",
-      details: "Use Flutter for development.",
-      link: "https://play.google.com/store/apps/details?id=com.viknavara.vn",
-    },
-    { name: "The Blacklist", details: "Use Nuxt for development.", link: "" },
-    {
-      name: "EVP Network Mobile",
-      details: "Use React Native TS for development.",
-      link: "",
-    },
-    { name: "G2G", details: "Use React Native TS for development.", link: "" },
-    { name: "Enfagrow", details: "Use Flutter for development.", link: "" },
     {
       name: "My order",
-      details: "Use React Native TS for development.",
+      details:
+        "I employ React Native with TypeScript for my development projects. Utilizing this powerful combination, I build cross-platform mobile applications with a strong emphasis on code quality, scalability, and maintainability. The integration of TypeScript enhances the development experience, providing static typing and improved code structuring. ",
       link: "https://play.google.com/store/apps/details?id=ai.myorder&hl=th&gl=US&pli=1",
+      img: [assetMO1, assetMO2, assetMO3, assetMO4],
+    },
+    {
+      name: "The Blacklist",
+      details:
+        "I utilize Nuxt for my development endeavors. Leveraging its capabilities, I craft dynamic and performant web applications with a focus on scalability and user experience. Nuxt's framework empowers me to streamline the development process and deliver modern, responsive, and feature-rich websites.",
+      link: "",
+      img: [assetBL1, assetBL2, assetBL3, assetBL4],
+    },
+    {
+      name: "G2G",
+      details:
+        "I employ React Native with TypeScript for my development projects. Utilizing this powerful combination, I build cross-platform mobile applications with a strong emphasis on code quality, scalability, and maintainability. The integration of TypeScript enhances the development experience, providing static typing and improved code structuring. ",
+      link: "",
+      img: [assetG2G1, assetG2G2, assetG2G3, assetG2G4],
+    },
+    {
+      name: "EVP Network",
+      details:
+        "I employ React Native with TypeScript for my development projects. Utilizing this powerful combination, I build cross-platform mobile applications with a strong emphasis on code quality, scalability, and maintainability. The integration of TypeScript enhances the development experience, providing static typing and improved code structuring. ",
+      link: "",
+      img: [assetEVP1, assetEVP2, assetEVP3, assetEVP4],
+    },
+    {
+      name: "VN",
+      details:
+        "I leverage Flutter for my development projects, taking advantage of its robust framework to build cross-platform mobile applications with a seamless user experience. The versatility and efficiency of Flutter empower me to create visually appealing and performant applications for both Android and iOS platforms.",
+      link: "https://play.google.com/store/apps/details?id=com.viknavara.vn",
+      img: [assetVN1, assetVN2, assetVN3, assetVN4],
+    },
+    {
+      name: "Enfagrow",
+      details:
+        "I leverage Flutter for my development projects, taking advantage of its robust framework to build cross-platform mobile applications with a seamless user experience. The versatility and efficiency of Flutter empower me to create visually appealing and performant applications for both Android and iOS platforms.",
+      link: "",
+      img: [assetEF1, assetEF2, assetEF3, assetEF4],
     },
   ],
 };

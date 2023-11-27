@@ -4,6 +4,7 @@ import { MyInfo } from "@/base/constanst";
 import Box from "@/base/components/ui/box";
 
 export default function ExperienceComponent() {
+  console.log("experience");
   return (
     <>
       <div className={s.work}>
@@ -43,12 +44,10 @@ export default function ExperienceComponent() {
             <Box h={10} />
             <div>
               {item.details.map((itm, inx) => (
-                <>
-                  <div key={inx} className="text-very-small">
-                    - {itm}
-                  </div>
+                <div key={inx}>
+                  <div className="text-very-small">- {itm}</div>
                   <Box h={5} />
-                </>
+                </div>
               ))}
             </div>
             <Box h={10} />

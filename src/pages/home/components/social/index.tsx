@@ -45,6 +45,8 @@ export default function SocialComponent() {
     },
   ];
 
+  console.log("social");
+
   return (
     <>
       <Image src={assetCP4} alt={"avatar"} className={s.img} />

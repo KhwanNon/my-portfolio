@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 export default function CoverComponent() {
-  return (
-    <div>CoverComponent</div>
-  )
+  console.log("cover");
+
+  return <div>CoverComponent</div>;
 }

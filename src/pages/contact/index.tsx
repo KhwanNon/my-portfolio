@@ -94,7 +94,7 @@ export default function ContactPage() {
       <div className={styles.content}>
         <div className={styles.channelContainer}>
           {channel.map((item, index) => (
-            <div className={styles.channel}>
+            <div key={index} className={styles.channel}>
               <div className={styles.chTitle}>{item.title}</div>
               <Box h={5} />
               <div className={styles.chValue}>{item.data}</div>
@@ -111,7 +111,7 @@ export default function ContactPage() {
         <Box h={10} />
         <div className={styles.socialContainer}>
           {social.map((item, index) => (
-            <div className={styles.social}>
+            <div key={index} className={styles.social}>
               <div
                 className={styles.circleSocial}
                 style={{ "--color": item.color } as any}
