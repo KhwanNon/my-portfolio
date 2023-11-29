@@ -18,15 +18,16 @@
   flex-direction: column;
   background-color: #dd1525;
   height: 100vh;
+  position: relative;
 }
 
 .boxProfile {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   min-height: 50vh;
-  padding: 30px;
-  box-shadow: 0px 0px 50px 70px #151515;
+  padding: 20px;
 }
 
 .boxSkills {
@@ -42,7 +43,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0px 80px 0px;
+  padding: 40px 0px 60px 0px;
 }
 
 .boxExperience {

@@ -40,20 +40,23 @@
 .boxTabs {
   display: flex;
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   z-index: 2;
+  position: relative;
 }
 
 .tab,
 .tabActive {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  width: 180px;
+  max-width: 270px;
+  min-width: 180px;
   margin: 15px;
   text-align: center;
   color: #f9f54b;
@@ -61,6 +64,11 @@
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.802);
   border: 1px solid #f9f54b;
+  position: relative;
+}
+
+.tab {
+  transition: transform 0.3s ease;
 }
 
 .tabActive {
@@ -72,6 +80,40 @@
 .tab:hover {
   color: #000;
   background-color: #f9f54b;
-  transition: background-color 0.5s ease;
   cursor: pointer;
+  transform: scale(1.1);
+}
+
+.dropdown {
+  position: absolute;
+  width: 80%;
+  bottom: 80%;
+  background-color: black;
+}
+
+.dropdownList,
+.dropdownListActive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: white;
+  border: 1px solid #f9f54b;
+  background-color: rgba(0, 0, 0, 0.802);
+}
+
+.dropdownListActive {
+  background-color: #f9f64b3e;
+}
+
+.arrowDown {
+  position: absolute;
+  right: 15px;
+}
+
+@media only screen and (max-width: 631px) {
+  .tabActive {
+    width: 80%;
+  }
 }

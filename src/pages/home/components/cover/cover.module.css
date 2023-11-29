@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  padding-bottom: 200px;
+  z-index: 2;
+}
+
+.imgBg {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+
+.rowBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.btnStyle {
+  flex: 1;
+  position: relative;
+  color: #f9f54b;
+  cursor: pointer;
+  padding: 15px;
+  border: 2px solid #f9f54b;
+  background: rgba(0, 0, 0, 0.802);
+  max-width: 300px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.btnStyle:hover {
+  transform: scale(1.1);
+  color: #000;
+  background: #f9f54b;
+}

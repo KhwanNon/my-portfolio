@@ -11,13 +11,13 @@
 }
 
 .box {
-  border: 1px solid #f9f54b;
+  border: 1px solid #fff;
   margin-top: 40px;
   padding: 20px;
   color: rgb(233, 233, 233);
   min-height: 300px;
   background-color: rgba(0, 0, 0, 0.802);
-  box-shadow: inset 0px 0px 0.5rem 0px #f9f54b, 0px 0px 0.5rem 0px #f9f54b;
+  box-shadow: inset 0px 0px 0.5rem 0px #fff, 0px 0px 0.5rem 0px #fff;
   transition: transform 0.3s ease;
 }
 
