@@ -23,7 +23,7 @@ export default function CoverComponent() {
         <div className={s.rowBtn}>
           <button className={s.btnStyle}>BUTTON</button>
           <Box w={30} />
-          <button className={s.btnStyle}>BUTTON</button>
+          <button className={s.btnStyle}>MY THEME</button>
         </div>
       </div>
     </>

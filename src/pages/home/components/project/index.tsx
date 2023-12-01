@@ -56,14 +56,12 @@ export default function ProjectComponent() {
 
   return (
     <>
-      <Image src={assetCP3} alt={"cp3"} className={s.imgBg} />
       <div
         style={{ zIndex: 2 }}
-        className="text-white text-label-large m-20 text-center"
+        className="text-white text-very-large text-white text-center"
       >
-        MOBILE DEVELOPMENT PROJECT
+        MOBILE PROJECT
       </div>
-      <Box h={20} />
       <div className={s.boxListProject}>
         <div>
           {MyInfo.project[indexActive].img.map((item, i) => (

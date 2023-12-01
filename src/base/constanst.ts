@@ -33,10 +33,10 @@ export const MyInfo = {
     git: "https://github.com/KhwanNon?tab=repositories",
   },
   details_profile:
-    "I am a 24-year-old mobile and web developer with two years of experience. I am keenly interested in securing a role as a full-stack or web developer, and I am particularly drawn to remote work opportunities. I consider myself a responsible individual with strong time management skills. Moreover, I have demonstrated the ability to collaborate effectively within a team, valuing the perspectives and input of my colleagues.",
+    "I am a 24-year-old professional specializing in mobile and web development with two years of practical experience. Currently, I am actively pursuing opportunities as a web developer, with a particular interest in remote work. I take pride in being a responsible individual with excellent time management skills and a strong emphasis on prioritization. Moreover, I have demonstrated a successful history of collaborating effectively within teams, placing significant value on the diverse perspectives and input of my colleagues.",
   work_experience: [
     {
-      date: "04/2023 - 09/2023",
+      date: "05/2023 - 10/2023",
       location: "Thailand, Chon Buri",
       title1: "Mobile Developer",
       title2: "MYORDER MARKETING CO., LTD.",
@@ -48,7 +48,7 @@ export const MyInfo = {
       ],
     },
     {
-      date: "09/2021 - 03/2023",
+      date: "09/2021 - 04/2023",
       location: "Thailand, Bangkok",
       title1: "Mobile Developer",
       title2: "MINERTA TECHNOLOGY CO., LTD.",
