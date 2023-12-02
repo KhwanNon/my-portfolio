@@ -29,10 +29,10 @@
 .btnStyle {
   flex: 1;
   position: relative;
-  color: #f9f54b;
+  color: #fcee0a;
   cursor: pointer;
   padding: 15px;
-  border: 2px solid #f9f54b;
+  border: 2px solid #fcee0a;
   background: rgba(0, 0, 0, 0.802);
   max-width: 300px;
   font-size: 16px;
@@ -42,5 +42,5 @@
 .btnStyle:hover {
   transform: scale(1.1);
   color: #000;
-  background: #f9f54b;
+  background: #fcee0a;
 }

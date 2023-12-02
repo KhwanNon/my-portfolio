@@ -7,11 +7,15 @@ export default function ProfileComponent() {
 
   return (
     <>
+      <Box h={20} />
       <div className="text-yellow text-center text-label-large">
         PROFILE AND INTERESTS
       </div>
       <Box h={20} />
-      <div className="text-white text-small text-scale" style={{ maxWidth: 700 }}>
+      <div
+        className="text-white text-small text-scale"
+        style={{ maxWidth: 700 }}
+      >
         {MyInfo.details_profile}
       </div>
     </>

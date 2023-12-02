@@ -16,14 +16,24 @@ export default function CoverComponent() {
           {MyInfo.contact.name}
         </div>
         <Box h={40} />
-        <div className="text-white text-small text-cente">
+        <div className="text-white text-small text-center">
           WELCOME TO MY PORTFOLIO
         </div>
         <Box h={30} />
         <div className={s.rowBtn}>
-          <button className={s.btnStyle}>BUTTON</button>
+          <button
+            className={s.btnStyle}
+            onClick={() => window.open(MyInfo.contact.git, "_blank")}
+          >
+            MY GITHUB
+          </button>
           <Box w={30} />
-          <button className={s.btnStyle}>MY THEME</button>
+          <button
+            className={s.btnStyle}
+            onClick={() => window.open(MyInfo.contact.theme, "_blank")}
+          >
+            MY THEME
+          </button>
         </div>
       </div>
     </>

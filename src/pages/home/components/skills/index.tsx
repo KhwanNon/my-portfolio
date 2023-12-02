@@ -11,10 +11,12 @@ import {
   assetTS,
 } from "@/generated/assets";
 import { MyInfo } from "@/base/constanst";
-import { colorGoLight } from "@/base/colors";
+import { useWindowSize } from "@/hooks/use_window_size";
 
 export default function SkillsComponent() {
   console.log("skills");
+  const size = useWindowSize();
+  const ipadSize: boolean = (size?.width ?? 0) < 1137;
   const [indexActive, steIndexActive] = useState<number>(0);
 
   function onSelectTab(index: number) {
@@ -87,8 +89,20 @@ export default function SkillsComponent() {
   }
 
   function renderLanguage() {
-    return MyInfo.skills.languages.map((item, _) =>
-      renderRowData(item.name, item.level, 100, "text")
+    return (
+      <>
+        {MyInfo.skills.languages.map((item, _) =>
+          renderRowData(item.name, item.level, 100, "text")
+        )}
+        <Box h={40} />
+        <div className="text-very-small text-white">
+          In addressing language challenges, I am currently not enrolled in an
+          English course. However, I make an effort to watch movies with English
+          subtitles, explore content on foreign YouTube channels, and strive to
+          comprehend spoken English.
+        </div>
+        ;
+      </>
     );
   }
 
@@ -102,7 +116,13 @@ export default function SkillsComponent() {
     <>
       <div className={s.tabs}>
         <div>
-          <div className="text-very-large text-white">SKILLS & LANGUAGE</div>
+          <div
+            className={`text-very-large text-white ${
+              ipadSize ? "text-center" : ""
+            }`}
+          >
+            SKILLS & LANGUAGE
+          </div>
         </div>
         <Box h={70} />
         <div>
@@ -117,7 +137,7 @@ export default function SkillsComponent() {
         </div>
       </div>
       <div className={s.info}>
-        <Image src={assetCP2} alt={"cp2"} className={s.imgBg} />
+        {!ipadSize && <Image src={assetCP2} alt={"cp2"} className={s.imgBg} />}
         <div className={s.boxInfomation}>{data[indexActive].element}</div>
       </div>
     </>

@@ -51,7 +51,7 @@ export default function SocialComponent() {
     <>
       <Image src={assetCP4} alt={"avatar"} className={s.img} />
       <div className={s.social}>
-        <div className="text-label-large text-black">SOCIAL ONLINE</div>
+        <div className="text-label-large text-black text-center">SOCIAL ONLINE</div>
         <Box h={20} />
         <div className="text-center text-small text-black">
           Explore the digital realm with our vibrant online community. Connect,

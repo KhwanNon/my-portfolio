@@ -31,6 +31,8 @@ export const MyInfo = {
     phone: "083-862-3540",
     email: "Khwan.nontawichit@gmail.com",
     git: "https://github.com/KhwanNon?tab=repositories",
+    address: "Pak Kret, Nonthaburi, Thailand",
+    theme: "https://marketplace.visualstudio.com/items?itemName=GopherTheme.gumua-gopher-theme",
   },
   details_profile:
     "I am a 24-year-old professional specializing in mobile and web development with two years of practical experience. Currently, I am actively pursuing opportunities as a web developer, with a particular interest in remote work. I take pride in being a responsible individual with excellent time management skills and a strong emphasis on prioritization. Moreover, I have demonstrated a successful history of collaborating effectively within teams, placing significant value on the diverse perspectives and input of my colleagues.",

@@ -7,11 +7,10 @@ import ProfileComponent from "./components/profile";
 import ProjectComponent from "./components/project";
 import ContactComponent from "./components/contact";
 import CoverComponent from "./components/cover";
-import { assetBL2 } from "@/generated/assets";
 
 export default function HomePage() {
-  console.log('home');
-  
+  console.log("home");
+
   return (
     <div className={s.container}>
       <div className={s.boxCover}>
