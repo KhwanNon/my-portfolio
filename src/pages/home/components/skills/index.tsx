@@ -4,6 +4,8 @@ import Box from "@/base/components/ui/box";
 import Image from "next/image";
 import {
   assetCP2,
+  assetCP3,
+  assetCP5,
   assetFlutter,
   assetJS,
   assetNuxt,
@@ -18,6 +20,7 @@ export default function SkillsComponent() {
   const size = useWindowSize();
   const ipadSize: boolean = (size?.width ?? 0) < 1137;
   const [indexActive, steIndexActive] = useState<number>(0);
+  const listImage = [assetCP2, assetCP5, assetCP3];
 
   function onSelectTab(index: number) {
     if (index == indexActive) return;
@@ -137,7 +140,9 @@ export default function SkillsComponent() {
         </div>
       </div>
       <div className={s.info}>
-        {!ipadSize && <Image src={assetCP2} alt={"cp2"} className={s.imgBg} />}
+        {!ipadSize && (
+          <Image src={listImage[indexActive]} alt={"img"} className={s.imgBg} />
+        )}
         <div className={s.boxInfomation}>{data[indexActive].element}</div>
       </div>
     </>

@@ -8,11 +8,18 @@ export default function ExperienceComponent() {
   return (
     <>
       <div className={s.work}>
-        <div className="text-label-large text-center text-white">
+        <div
+          className="text-label-large text-center text-white"
+          style={{ color: "#fff" }}
+        >
           EXPERIENCE
         </div>
         {MyInfo.work_experience.map((item, i) => (
-          <div key={i} className={s.box}>
+          <div
+            key={i}
+            className={s.box}
+            style={{ "--color": "#fff" } as any}
+          >
             <div className="text-small">{item.date}</div>
             <div className="text-small">{item.location}</div>
             <Box h={10} />
@@ -33,9 +40,18 @@ export default function ExperienceComponent() {
         ))}
       </div>
       <div className={s.education}>
-        <div className="text-label-large text-center text-white">EDUCATION</div>
+        <div
+          className="text-label-large text-center text-white"
+          style={{ color: "#63e8fd" }}
+        >
+          EDUCATION
+        </div>
         {MyInfo.education.map((item, i) => (
-          <div key={i} className={s.box}>
+          <div
+            key={i}
+            className={s.box}
+            style={{ "--color": "#63e8fd" } as any}
+          >
             <div className="text-small">{item.date}</div>
             <div className="text-small">{item.location}</div>
             <Box h={10} />

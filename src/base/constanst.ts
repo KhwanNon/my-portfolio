@@ -32,10 +32,11 @@ export const MyInfo = {
     email: "Khwan.nontawichit@gmail.com",
     git: "https://github.com/KhwanNon?tab=repositories",
     address: "Pak Kret, Nonthaburi, Thailand",
-    theme: "https://marketplace.visualstudio.com/items?itemName=GopherTheme.gumua-gopher-theme",
+    theme:
+      "https://marketplace.visualstudio.com/items?itemName=GopherTheme.gumua-gopher-theme",
   },
   details_profile:
-    "I am a 24-year-old professional specializing in mobile and web development with two years of practical experience. Currently, I am actively pursuing opportunities as a web developer, with a particular interest in remote work. I take pride in being a responsible individual with excellent time management skills and a strong emphasis on prioritization. Moreover, I have demonstrated a successful history of collaborating effectively within teams, placing significant value on the diverse perspectives and input of my colleagues.",
+    "I am a 24-year-old professional specializing in mobile and web development with two years of hands-on experience. Currently, I am actively seeking opportunities as a web developer, with a specific interest in remote or hybrid work arrangements. I take pride in being a responsible individual with excellent time management skills and a strong emphasis on prioritization. Furthermore, I have demonstrated effective collaboration within teams, placing significant value on the diverse perspectives and input of my colleagues.",
   work_experience: [
     {
       date: "05/2023 - 10/2023",

@@ -23,16 +23,22 @@ export default function CoverComponent() {
         <div className={s.rowBtn}>
           <button
             className={s.btnStyle}
-            onClick={() => window.open(MyInfo.contact.git, "_blank")}
+            onClick={() => {
+              const section: any = document.getElementById("profile");
+              section.scrollIntoView({ behavior: "smooth" });
+            }}
           >
-            MY GITHUB
+            VIEW PROFILE
           </button>
           <Box w={30} />
           <button
             className={s.btnStyle}
-            onClick={() => window.open(MyInfo.contact.theme, "_blank")}
+            onClick={() => {
+              const section: any = document.getElementById("project");
+              section.scrollIntoView({ behavior: "smooth" });
+            }}
           >
-            MY THEME
+            VIEW PROJECT
           </button>
         </div>
       </div>

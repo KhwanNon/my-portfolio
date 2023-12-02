@@ -11,15 +11,17 @@
 }
 
 .box {
-  border: 1px solid #fff;
+  border: 1px solid var(--color);
   margin-top: 40px;
   padding: 20px;
-  color: rgb(233, 233, 233);
+  color: var(--color);
   min-height: 300px;
   background-color: rgba(0, 0, 0, 0.802);
   transition: transform 0.3s ease;
+  box-shadow: inset 0px 0px 0.5rem 0px var(--color),
+    0px 0px 0.5rem 0px var(--color);
 }
 
 .box:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
