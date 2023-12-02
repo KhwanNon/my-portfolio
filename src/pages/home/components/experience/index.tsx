@@ -42,7 +42,7 @@ export default function ExperienceComponent() {
       <div className={s.education}>
         <div
           className="text-label-large text-center text-white"
-          style={{ color: "#63e8fd" }}
+          style={{ color: "#fff" }}
         >
           EDUCATION
         </div>
@@ -50,7 +50,7 @@ export default function ExperienceComponent() {
           <div
             key={i}
             className={s.box}
-            style={{ "--color": "#63e8fd" } as any}
+            style={{ "--color": "#fff" } as any}
           >
             <div className="text-small">{item.date}</div>
             <div className="text-small">{item.location}</div>
