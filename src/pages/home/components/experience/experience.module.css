@@ -18,8 +18,8 @@
   min-height: 300px;
   background-color: rgba(0, 0, 0, 0.802);
   transition: transform 0.3s ease;
-  box-shadow: inset 0px 0px 0.5rem 0px var(--color),
-    0px 0px 0.5rem 0px var(--color);
+  /* box-shadow: inset 0px 0px 0.5rem 0px var(--color),
+    0px 0px 0.5rem 0px var(--color); */
 }
 
 .box:hover {

@@ -43,10 +43,9 @@ export const MyInfo = {
       location: "Thailand, Chon Buri",
       title1: "Mobile Developer",
       title2: "MYORDER MARKETING CO., LTD.",
-      details: [
-        "Developed applications for database processing and tested created software.",
+      details: [  
+        "Developed Mobile with React native and Flutter.",
         "Work on a team of developers to maintain and enhance applications.",
-        "Co work senior developers with coding, testing, and debugging of a mobile application.",
         "Participated in team meetings and contributed to project planning and design discussions.",
       ],
     },
@@ -56,7 +55,7 @@ export const MyInfo = {
       title1: "Mobile Developer",
       title2: "MINERTA TECHNOLOGY CO., LTD.",
       details: [
-        "Developed applications for database processing and tested created software.",
+        "Developed Mobile and Web applications.",
         "Mentor junior engineers, providing guidance on best practices and code review feedback to improve code quality and maintainability.",
         "Work on a team of developers to maintain and enhance applications.",
         "Co work senior developers with coding, testing, and debugging of a mobile application.",
