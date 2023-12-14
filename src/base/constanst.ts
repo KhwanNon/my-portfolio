@@ -43,7 +43,7 @@ export const MyInfo = {
       location: "Thailand, Chon Buri",
       title1: "Mobile Developer",
       title2: "MYORDER MARKETING CO., LTD.",
-      details: [  
+      details: [
         "Developed Mobile with React native and Flutter.",
         "Work on a team of developers to maintain and enhance applications.",
         "Participated in team meetings and contributed to project planning and design discussions.",
@@ -99,16 +99,32 @@ export const MyInfo = {
         level: "1 Year 4 Month",
       },
       {
-        name: "React Native (Type Script)",
+        name: "React Native",
         level: "5 Month",
       },
       {
-        name: "Next JS",
+        name: "Next",
         level: "1 Month",
       },
       {
-        name: "Nuxt JS",
+        name: "Nuxt",
         level: "2 Month",
+      },
+      {
+        name: "Android (Kotlin)",
+        level: "4 Month",
+      },
+      {
+        name: "TypeScript/JavaScript",
+        level: "",
+      },
+      {
+        name: "HTML/CSS",
+        level: "",
+      },
+      {
+        name: "C/C++",
+        level: "",
       },
     ],
     soft_skills: [

@@ -4,6 +4,7 @@ export const assetReact = require("../assets/images/react.svg");
 export const assetNuxt = require("../assets/images/nuxt-icon-white.png");
 export const assetJS = require("../assets/images/js.png");
 export const assetGo = require("../assets/images/go.png");
+export const assetKotlin = require("../assets/images/kotlin.png");
 
 export const assetBL1 = require("../assets/images/project/the-blacklist/bl1.jpg");
 export const assetBL2 = require("../assets/images/project/the-blacklist/bl2.jpg");

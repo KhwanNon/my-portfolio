@@ -11,6 +11,7 @@ import {
   assetNuxt,
   assetReact,
   assetTS,
+  assetKotlin,
 } from "@/generated/assets";
 import { MyInfo } from "@/base/constanst";
 import { useWindowSize } from "@/hooks/use_window_size";
@@ -69,16 +70,49 @@ export default function SkillsComponent() {
   function renderHardSkills() {
     return (
       <div>
-        <div style={{ display: "flex" }}>
-          <Image src={assetFlutter} alt="nuxt" width="45" height="40" />
-          <Box w={10} />
-          <Image src={assetReact} alt="react" width="40" height="40" />
-          <Box w={10} />
-          <Image src={assetTS} alt="ts" width="40" height="40" />
-          <Box w={10} />
-          <Image src={assetJS} alt="js" width="40" height="40" />
-          <Box w={10} />
-          <Image src={assetNuxt} alt="nuxt" width="40" height="40" />
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <Image
+            src={assetFlutter}
+            alt="flutter"
+            width="45"
+            height="40"
+            className={s.boxImg}
+          />
+          <Image
+            src={assetReact}
+            alt="react"
+            width="40"
+            height="40"
+            className={s.boxImg}
+          />
+          <Image
+            src={assetTS}
+            alt="ts"
+            width="40"
+            height="40"
+            className={s.boxImg}
+          />
+          <Image
+            src={assetJS}
+            alt="js"
+            width="40"
+            height="40"
+            className={s.boxImg}
+          />
+          <Image
+            src={assetNuxt}
+            alt="nuxt"
+            width="40"
+            height="40"
+            className={s.boxImg}
+          />
+          <Image
+            src={assetKotlin}
+            alt="kotlin"
+            width="40"
+            height="40"
+            className={s.boxImg}
+          />
         </div>
         <Box h={40} />
         {MyInfo.skills.software_skills.map((item, index) => (
