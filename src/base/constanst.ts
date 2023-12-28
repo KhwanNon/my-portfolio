@@ -36,7 +36,7 @@ export const MyInfo = {
       "https://marketplace.visualstudio.com/items?itemName=GopherTheme.gumua-gopher-theme",
   },
   details_profile:
-    "I am a 24-year-old professional specializing in mobile and web development with two years of hands-on experience. Currently, I am actively seeking opportunities as a web developer, with a specific interest in remote or hybrid work arrangements. I take pride in being a responsible individual with excellent time management skills and a strong emphasis on prioritization. Furthermore, I have demonstrated effective collaboration within teams, placing significant value on the diverse perspectives and input of my colleagues.",
+    "I am a 24-year-old professional specializing in mobile and web development with two years of hands-on experience. Currently, I am actively seeking opportunities as a web and mobile developer, with a specific interest in remote or hybrid work arrangements. I take pride in being a responsible individual with excellent time management skills and a strong emphasis on prioritization. Furthermore, I have demonstrated effective collaboration within teams, placing significant value on the diverse perspectives and input of my colleagues.",
   work_experience: [
     {
       date: "05/2023 - 10/2023",
