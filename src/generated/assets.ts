@@ -36,6 +36,11 @@ export const assetMO2 = require("../assets/images/project/mo/MO2.jpg");
 export const assetMO3 = require("../assets/images/project/mo/MO3.jpg");
 export const assetMO4 = require("../assets/images/project/mo/MO4.jpg");
 
+export const assetAI1 = require("../assets/images/project/ailearn/ai1.png");
+export const assetAI2 = require("../assets/images/project/ailearn/ai2.png");
+export const assetAI3 = require("../assets/images/project/ailearn/ai3.png");
+export const assetAI4 = require("../assets/images/project/ailearn/ai4.png");
+
 export const assetCP1 = require("../assets/images/cyberpunk/cp1.png");
 export const assetCP2 = require("../assets/images/cyberpunk/cp2.png");
 export const assetCP3 = require("../assets/images/cyberpunk/cp3.png");

@@ -23,30 +23,48 @@ import {
   assetMO2,
   assetMO3,
   assetMO4,
+  assetAI1,
+  assetAI2,
+  assetAI3,
+  assetAI4,
 } from "@/generated/assets";
 
 export const MyInfo = {
   contact: {
     name: "Khwanchai Nontawichit",
-    phone: "083-862-3540",
-    email: "Khwan.nontawichit@gmail.com",
+    phone: "📱 +66 642-565-976",
+    email: "📧 khwan.nontawichit@gmail.com",
     git: "https://github.com/KhwanNon?tab=repositories",
-    address: "Pak Kret, Nonthaburi, Thailand",
+    address: "📍 Bangkok, Thailand",
     theme:
       "https://marketplace.visualstudio.com/items?itemName=GopherTheme.gumua-gopher-theme",
   },
   details_profile:
-    "I am a 24-year-old professional specializing in mobile and web development with two years of hands-on experience. Currently, I am actively seeking opportunities as a web and mobile developer, with a specific interest in remote or hybrid work arrangements. I take pride in being a responsible individual with excellent time management skills and a strong emphasis on prioritization. Furthermore, I have demonstrated effective collaboration within teams, placing significant value on the diverse perspectives and input of my colleagues.",
+    "Hello, my name is Khwan, a 26-year-old Mobile Developer with over 3 years of experience in Flutter development. I have a strong background in leading development teams, structuring applications with Clean Architecture, and managing environments efficiently. I am passionate about mobile development and always eager to take on new challenges. Additionally, I can contribute to front-end development in various languages and frameworks, even those I haven’t previously worked with, as I quickly adapt and learn due to shared concepts across technologies.",
   work_experience: [
+    {
+      date: "01/2024 - Present",
+      location: "Thailand, Bangkok",
+      title1: "Development/Mobile-app Developer",
+      title2: "LEARNCLOUD CO., LTD.",
+      details: [
+        "Led the development of Flutter applications from scratch, implementing Clean Architecture.",
+        "Collaborated with backend, AI, and design teams, contributing ideas and assisting in UX/UI design.",
+        "Participated in Scrum-based planning meetings to ensure smooth project execution.",
+        "Managed app deployment to both the App Store & Play Store.",
+        "Oversaw version control, release management, and test build distribution.",
+        "Served as Mobile Team Lead, assigning tasks and managing workflows using Jira.",
+      ],
+    },
     {
       date: "05/2023 - 10/2023",
       location: "Thailand, Chon Buri",
       title1: "Mobile Developer",
       title2: "MYORDER MARKETING CO., LTD.",
       details: [
-        "Developed Mobile with React native and Flutter.",
-        "Work on a team of developers to maintain and enhance applications.",
-        "Participated in team meetings and contributed to project planning and design discussions.",
+        "Developed mobile applications using Flutter and React Native.",
+        "Worked with a team of developers to maintain and enhance applications.",
+        "Contributed to project planning, design discussions, and team meetings.",
       ],
     },
     {
@@ -55,11 +73,11 @@ export const MyInfo = {
       title1: "Mobile Developer",
       title2: "MINERTA TECHNOLOGY CO., LTD.",
       details: [
-        "Developed Mobile and Web applications.",
-        "Mentor junior engineers, providing guidance on best practices and code review feedback to improve code quality and maintainability.",
-        "Work on a team of developers to maintain and enhance applications.",
-        "Co work senior developers with coding, testing, and debugging of a mobile application.",
-        "Participated in team meetings and contributed to project planning and design discussions.",
+        "Developed mobile and web applications.",
+        "Mentored junior developers, providing guidance on best practices, code reviews, and improving maintainability.",
+        "Worked in a collaborative team to maintain and enhance applications.",
+        "Assisted senior developers in coding, testing, and debugging mobile applications.",
+        "Participated in team meetings and contributed to project planning & design discussions.",
       ],
     },
   ],
@@ -90,13 +108,13 @@ export const MyInfo = {
     languages: [
       {
         name: "English",
-        level: "Low",
+        level: "Basic",
       },
     ],
     software_skills: [
       {
         name: "Flutter",
-        level: "1 Year 4 Month",
+        level: "3 Year",
       },
       {
         name: "React Native",
@@ -155,6 +173,12 @@ export const MyInfo = {
     ],
   },
   project: [
+    {
+      name: "aiLearn",
+      details: "",
+      link: "https://play.google.com/store/apps/details?id=ai.myorder&hl=th&gl=US&pli=1",
+      img: [assetAI1, assetAI2, assetAI3, assetAI4],
+    },
     {
       name: "My order",
       details:
